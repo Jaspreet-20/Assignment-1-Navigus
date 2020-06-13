@@ -1,0 +1,39 @@
+
+#logo{
+  position: fixed;
+}
+
+#heading{
+
+  text-align:center;
+  font-size: 50px;
+}
+
+hr{
+  background-color: white;
+}
+
+.container{
+  overflow: hidden;
+  text-align: center;
+}
+
+#border_show{
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+button{
+  position: sticky;
+  left: 40%;
+}
+
+input{
+  border-radius: 20px;
+  padding: 10px;
+  word-spacing: 5px;
+}
+
+input:nth-child(odd) {background: #CCC;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Javascript/registration.js" charset="utf-8"></script>
+    <link rel="icon" href="../Image/cute-anime-eyes-png.png">
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  </head>
+  <body class="jumbotron">
+                                 <!--Header Page      -->
+    <header>
+      <img src="../Image/cute-anime-eyes-png.png" alt="Logo" height="100" width="120" id="logo">
+      <p id="heading"> Sign <span class="badge badge-secondary"> In</span> </p>
+    </header>
+
+                                <!--      Error Message Display            -->
+    <p class="alert alert-warning" id="message" hidden></p><hr>
+
+
+                                <!--      Log in Form                -->
+        <form class="LoginForm" action="../PHP/LoginConnection.php?show" method="post">
+          <input type="text" name="Email" placeholder="Email *" size="40" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"><hr>
+          <input type="password" name="Password" placeholder="Password *" size="40" required><hr>
+          <button type="submit" name="button" class="btn btn-outline-success">Sign in</button><hr>
+          <span>New User  <a href="Registration.html">Click here to Register</a></span>
+        </form>
+  </body>
+</html>

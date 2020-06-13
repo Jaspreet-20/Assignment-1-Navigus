@@ -1,0 +1,27 @@
+#logo{
+  position: fixed;
+}
+
+#heading{
+
+  text-align:center;
+  font-size: 50px;
+}
+
+button{
+  position: sticky;
+  left: 40%;
+}
+
+input{
+  border-radius: 20px;
+  padding: 10px;
+  word-spacing: 5px;
+}
+
+.LoginForm{
+  text-align: center;
+}
+hr{
+background-color: white;
+}

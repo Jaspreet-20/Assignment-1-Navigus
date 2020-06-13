@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="../CSS/registration.css">
+  <link rel="icon" href="../Image/cute-anime-eyes-png.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="../Javascript/registration.js" charset="utf-8"></script>
+</head>
+
+<body class="jumbotron">
+
+                                              <!--         Header Of the Page            -->
+  <header>
+    <img src="../Image/cute-anime-eyes-png.png" alt="Logo" height="100" width="120" id="logo">
+    <p id="heading"> Registration <span class="badge badge-secondary">Form</span> </p>
+  </header><hr>
+                                              <!--         Div Section                   -->
+  <div class="container">
+    <span id="border_show">Feilds Marked with * are Mandatory</span>
+    <span>Already Registered  <a href="LoginPage.html">Click here to Login</a></span>
+    <hr>
+                                              <!--      Error Message Display            -->
+     <p class="alert alert-warning" id="message" hidden></p>
+                                              <!--      Registration Form                -->
+
+    <form action="../PHP/registration.php" method="post" onsubmit="return Register_Confirm()">
+      <input type="text" name="First_Name" placeholder="FirstName *">
+      <input type="text" name="Middle_name" placeholder="MiddleName">
+      <input type="text" name="Last_name" placeholder="LastName *">
+      <hr>
+      <input type="tel" name="phone" placeholder="Contact * Ex:9896XXXX32">
+      <input type="email" name="email" placeholder="email ex:ApnaGharXX@gmail.com *" size="48">
+      <hr>
+      <input type="password" name="password" placeholder="Password * " required>
+      <input type="password" name="Cpassword" placeholder="ConfirmPassword * "required>
+      <hr>
+      <button type="submit" id="register_worker" class="btn btn-outline-success" name="Register">Register</button>
+    </form>
+                              <!--      Form Ending            -->
+  </div>
+                              <!--      Div Ending            -->
+</body>
+
+</html>

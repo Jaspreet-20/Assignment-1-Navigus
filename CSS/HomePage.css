@@ -1,0 +1,39 @@
+span{
+  font-size: 30px;
+  text-align: center;
+}
+
+#UserName{
+  background-color: black;
+  color: white;
+}
+
+hr{
+  background-color: white;
+}
+
+.test {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+      margin-left: 5px;
+    }
+
+#Innertext{
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+button{
+  text-decoration: none;
+  border: none;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+#logo{
+  float: right;
+}
