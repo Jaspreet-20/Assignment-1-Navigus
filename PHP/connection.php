@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("wp433upk59nnhpoh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "mglbu7bzklbh2ud0", "ioor0u0o7bhoerdr", "be9o21xifa7ekf3y");
+$link = mysqli_connect("us-cdbr-east-05.cleardb.net", "baa5da878138a6", "9cfc68cf", "presence_service");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
