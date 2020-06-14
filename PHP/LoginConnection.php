@@ -48,22 +48,22 @@ if($queryexecute)
  $query="insert into timedetail (User_Id) values('$temp')";
  $queryexecute=mysqli_query($link,$query);
 
-            header("refresh:3;url=Homepage.php");
+            header("refresh:1;url=Homepage.php");
             echo "Successfully Logged In Redirecting............";
           }
           else {
-            header("refresh:3;url=../Html/LoginPage.html");
+            header("refresh:1;url=../Html/LoginPage.html");
             echo "Incorrect Details";
           }
         }
         else {
-          header("refresh:3;url=../Html/LoginPage.html");
+          header("refresh:1;url=../Html/LoginPage.html");
           echo "Incorrect Details";
         }
      }
 else {
   echo "Not Registered";
-  header("refresh:1;url=Registration.html");
+  header("refresh:1;url=../Html/Registration.html");
      }
 }
  ?>
