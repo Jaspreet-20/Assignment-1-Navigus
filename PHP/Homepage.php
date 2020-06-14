@@ -67,6 +67,7 @@ if(isset($_GET['action']))
   
   <div class="Upper">
     <span>Currently Logged in User's</span>
+    <span class="badge badge-primary">Refresh For update</span>
     <?php
     if(!empty($_SESSION["Online_User"]))
     {
