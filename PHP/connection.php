@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("us-cdbr-east-05.cleardb.net", "baa5da878138a6", "9cfc68cf", "last_medicine");
+$link = mysqli_connect("us-cdbr-east-05.cleardb.net", "baa5da878138a6", "9cfc68cf", "presence_service");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
