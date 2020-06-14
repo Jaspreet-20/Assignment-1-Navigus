@@ -44,12 +44,27 @@ if(isset($_GET['action']))
 </head>
 
 <body class="jumbotron">
+  
   <!-- Header Page  -->
   <header>
-    <span id="UserName">Welcome <?php echo ($_SESSION['username'])." " ?> <button type="submit" id="logout_button" name="button_remove" onclick="window.location.href='Homepage.php?action&id=<?php echo $output["User_Id"]; ?>'">Signout</button></span>
+    <span id="UserName">Welcome Here to Get New Experience <button type="submit" id="logout_button" name="button_remove" onclick="window.location.href='Homepage.php?action&id=<?php echo $output["User_Id"]; ?>'">Signout</button></span>
     <img src="../Image/cute-anime-eyes-png.png" alt="Logo" height="100" width="120" id="logo">
     <hr>
   </header>
+
+  <section class="middle">
+    <div class="sub_middle">
+      <div class="spinner-grow text-primary"></div>
+      <div class="spinner-grow text-success"></div>
+      <div class="spinner-grow text-info"></div>
+      <div class="spinner-grow text-warning"></div>
+      <div class="spinner-grow text-danger"></div>
+      <div class="spinner-grow text-secondary"></div>
+      <div class="spinner-grow text-dark"></div>
+      <div class="spinner-grow text-light"></div>
+    </div>
+  </section>
+  
   <div class="Upper">
     <span>Currently Logged in User's</span>
     <?php
