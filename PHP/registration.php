@@ -14,7 +14,7 @@ if($result)
      $count=mysqli_num_rows($result);
      if($count > 0)
      {
-       header("refresh:3;url=LoginPage.html");
+       header("refresh:3;url=../Html/LoginPage.html");
        echo "Already Registered Redirecting............";
      }
      else
@@ -23,7 +23,7 @@ if($result)
            $result=mysqli_query($link,$query);
            if($result)
              {
-               header("refresh:3;url=LoginPage.html");
+               header("refresh:3;url=../Html/LoginPage.html");
                echo "Successfully Registered Redirecting............";
              }
      }
