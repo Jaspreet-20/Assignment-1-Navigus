@@ -23,7 +23,7 @@ if($queryexecute)
             $temp=$result['User_id'];
             $_SESSION['login']=true;
             $_SESSION['username']=$result['First_Name'];
-          //  unset($_SESSION["Online_User"]);
+            unset($_SESSION["Online_User"]);
             if(isset($_SESSION["Online_User"]))
             {
              $OnlineUser=array_column($_SESSION["Online_User"],"User_id");
